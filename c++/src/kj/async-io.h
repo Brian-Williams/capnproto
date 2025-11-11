@@ -149,7 +149,7 @@ public:
 
   virtual void abort(kj::Exception&& exception) {}
   // Communicates to the stream that it should stop accepting writes and should fail any
-  // pending writes with the given exception. This is intended to be used when the strema is
+  // pending writes with the given exception. This is intended to be used when the stream is
   // being shutdown due to an error or explicit cancelation. The default implementation, however,
   // does nothing for backwards compatibilty. Existing implementations of AsyncOutputStream that
   // want to support this method should override it, existing implementations that don't need it
